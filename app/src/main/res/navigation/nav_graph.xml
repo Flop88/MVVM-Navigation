@@ -14,7 +14,8 @@
             android:id="@+id/action_firstFragment_to_secondFragment"
             app:destination="@id/secondFragment"
             app:enterAnim="@android:anim/slide_in_left"
-            app:exitAnim="@android:anim/slide_out_right" />
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/nav_graph" />
     </fragment>
     <fragment
         android:id="@+id/secondFragment"

@@ -24,7 +24,9 @@ class FirstFragment : Fragment() {
         super.onStart()
 
         firstNextButton.setOnClickListener {
-            (activity as MainActivity).navController.navigate(R.id.action_firstFragment_to_secondFragment)
+            var bundle = Bundle()
+            bundle.putString("key", "Hello")
+            (activity as MainActivity).navController.navigate(R.id.action_firstFragment_to_secondFragment, bundle)
         }
     }
 }
